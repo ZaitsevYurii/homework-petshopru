@@ -1,0 +1,10 @@
+@mixin font() {
+   font-family: 'Gilroy', sans-serif;
+   font-size: 18px;
+   line-height: 21px;
+}
+
+@mixin flexBetween() {
+   display: flex;
+   justify-content: space-between;
+}

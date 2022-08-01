@@ -1,0 +1,87 @@
+@use "./blocks/variables" as *;
+@use "../blocks/mixins" as *;
+
+
+.header {
+   background-color: $headerColor;
+   padding: 33px 0 30px 0;
+}
+
+.logo {
+   @include flexBetween();
+   align-items: center;
+   margin-bottom: 42px;
+}
+
+.contacts {
+   display: flex;
+   align-items: center;
+   position: relative;
+
+   &__phone-icon {
+      margin-right: 9px;
+   }
+
+   &__tel {
+      font-family: 'Gilroy', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: #000000;
+      margin-right: 60px;
+   }
+
+   &__link-buy {
+      margin-right: 15px;
+   }
+}
+
+.contacts__link {
+   position: relative;
+}
+
+.contact__link-number {
+   position: absolute;
+   left: 15px;
+   bottom: 18px;
+}
+
+.nav {
+   @include flexBetween();
+}
+
+.menu {
+   display: flex;
+   align-items: center;
+   gap: 40px;
+   position: relative;
+}
+
+.menu__link {
+   @include font();
+   color: #4F4F4F;
+}
+
+.menu__item span::after {
+   content: url(../images/arrow.png);
+}
+
+.nav-search__form {
+   position: relative;
+}
+
+.nav-search__input {
+   background: #F2F2F2;
+   border: 1px solid #BDBDBD;
+   border-radius: 10px;
+   padding: 16px 273px 16px 20px;
+}
+
+.nav-search__icon {
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   margin-right: 20px;
+   margin-top: 15px;
+}

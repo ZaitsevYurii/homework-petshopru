@@ -1,0 +1,121 @@
+.main {
+   padding: 75px 0 100px 0;
+}
+
+.submenu {
+   display: flex;
+   justify-content: flex-start;
+   gap: 30px;
+   position: relative;
+   margin-bottom: 30px;
+}
+
+.submenu img {
+   position: absolute;
+   top: 5px;
+   left: 72px;
+   width: 6px;
+   height: 6px;
+}
+
+.back {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 44px;
+}
+
+
+.cards {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 20px;
+   margin-bottom: 50px;
+}
+
+.card {
+   max-width: 315px;
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+   padding: 20px 20px 30px 20px;
+   background: #F9F9F9;
+   border: 1px solid #F2F2F2;
+   box-shadow: -8px -8px 15px #FFFFFF, 8px 8px 15px rgba(0, 0, 0, 0.05);
+   border-radius: 20px;
+}
+
+.card a {
+   display: block;
+}
+
+
+.card__image {
+   background: #FFFFFF;
+}
+
+.card__name {
+   font-family: 'Gilroy', sans-serif;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 130%;
+   color: #333333;
+}
+
+.card__category {
+   font-family: 'Gilroy', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 130%;
+   color: #828282;
+}
+
+.card__price {
+   font-family: 'Gilroy', sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 27px;
+   color: #333333;
+}
+
+.card__form {}
+
+.card__form-item {
+   padding: 4px 12px;
+   font-family: 'Gilroy', sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 21px;
+   color: #4F4F4F;
+   background: #F9F9F9
+}
+
+.card__form-item:hover {
+   background: #FFFFFF;
+   border: 1px solid #3ECF5E;
+   border-radius: 5px;
+}
+
+
+.card-buy {
+   display: flex;
+   gap: 68px;
+}
+
+.card-buy a {
+   color: #FFFFFF;
+   padding: 12px 32px;
+   background: #3FCF5E;
+   border: 1px solid rgba(5, 175, 52, 0.53);
+   border-radius: 10px;
+}
+
+.page-numbers {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
