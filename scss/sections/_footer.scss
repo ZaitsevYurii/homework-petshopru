@@ -3,8 +3,6 @@
    padding: 100px 0 129px 0;
 }
 
-.wrapper {}
-
 .container {
    display: flex;
    align-items: center;
@@ -31,17 +29,20 @@
    margin-right: 466px;
 }
 
-.footer-icons__link {}
+.footer-contacts {
+   display: flex;
+   align-items: center;
 
-.footer-icons__img {}
+   &__logo {
+      margin-right: 9px;
+   }
 
-.footer-contacts {}
-
-.footer-contacts__tel {
-   font-family: 'Gilroy', sans-serif;
-   font-style: normal;
-   font-weight: 400;
-   font-size: 18px;
-   line-height: 21px;
-   color: #FFFFFF;
+   &__tel {
+      font-family: 'Gilroy', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FFFFFF;
+   }
 }

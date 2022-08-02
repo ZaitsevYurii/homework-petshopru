@@ -67,11 +67,12 @@
    content: url(../images/arrow.png);
 }
 
-.nav-search__form {
+.nav-search {
    position: relative;
 }
 
 .nav-search__input {
+   max-width: 345px;
    background: #F2F2F2;
    border: 1px solid #BDBDBD;
    border-radius: 10px;

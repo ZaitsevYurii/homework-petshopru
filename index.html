@@ -21,8 +21,7 @@
             <div class="contacts">
                <img class="contacts__phone-icon" src="./images/tel.png" alt="phone icon">
                <a class="contacts__tel" href="tel:89209994350">8 920 999 43 50</a>
-               <a class="contacts__link" href="#"><img class="contacts__link-buy" src="./images/buy.png"
-                     alt="logo buy">
+               <a class="contacts__link" href="#"><img class="contacts__link-buy" src="./images/buy.png" alt="logo buy">
                   <img class="contact__link-number" src="./images/2.png" alt="number"></a>
                <a class="contacts__link" href="#"><img class="contacts__link-add" src="./images/addUser.png"
                      alt="logo add user"></a>
@@ -41,10 +40,10 @@
             </div>
 
             <div class="nav-search">
-               <form class="nav-search__form" action="fom.in.ua/echo" method="POST">
+               <!-- <form class="nav-search__form" action="fom.in.ua/echo" method="POST"> -->
                   <input class="nav-search__input" type="search" placeholder="Поиск">
                   <img class="nav-search__icon" src="./images/search.png" alt="search icon">
-               </form>
+               <!-- </form> -->
             </div>
          </nav>
       </div>
@@ -53,9 +52,9 @@
    <main class="main">
       <div class="wrapper">
          <div class="submenu">
-            <p>Каталог</p>
-            <img src="./images/Ellipse 15.png" alt="coma logo">
-            <p>Готовые миксы</p>
+            <p class="submenu__item">Каталог</p>
+            <img class="submenu__image" src="./images/Ellipse 15.png" alt="coma logo">
+            <p class="submenu__item">Готовые миксы</p>
          </div>
          <div class="back">
             <img src="./images/back.png" alt="back logo">
@@ -68,23 +67,28 @@
                <span class="card__category">Корм для птиц</span>
                <span class="card__price">1000 руб.</span>
                <form action="#" class="card__form">
-                  <button class="card__form-item">
-                     <input type="radio">200 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">400 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">800 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">1 кг
-                  </button>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="200" checked>
+                     <label for="gramms"><span>200 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="400">
+                     <label for="gramms"><span>400 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="800">
+                     <label for="gramms"><span>800 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="1">
+                     <label for="gramms"><span>1 кг</span></label>
+                  </div>
+                  <div class="form-buttons">
+                     <a href="#" class="form-buttons__more-info">Подробнее</a>
+                     <button class="form-buttons__basket" type="button"><img src="./images/buy.png"
+                           alt="logo buy"></button>
+                  </div>
                </form>
-               <div class="card-buy">
-                  <a href="#">Подробнее</a>
-                  <a href="#"><img src="./images/buy.png" alt="logo buy"></a>
-               </div>
             </div>
             <div class="card">
                <img src="./images/mainProduct.png" alt="logo padovan" class="card__image">
@@ -92,23 +96,29 @@
                <span class="card__category">Корм для птиц</span>
                <span class="card__price">1000 руб.</span>
                <form action="#" class="card__form">
-                  <button class="card__form-item">
-                     <input type="radio">200 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">400 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">800 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">1 кг
-                  </button>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="200" checked>
+                     <label for="gramms"><span>200 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="400">
+                     <label for="gramms"><span>400 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="800">
+                     <label for="gramms"><span>800 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="1">
+                     <label for="gramms"><span>1 кг</span></label>
+                  </div>
+                  <div class="form-buttons">
+                     <a href="#" class="form-buttons__more-info">Подробнее</a>
+                     <button class="form-buttons__basket" type="button"><img src="./images/buy.png"
+                           alt="logo buy"></button>
+                  </div>
                </form>
-               <div class="card-buy">
-                  <a href="#">Подробнее</a>
-                  <a href="#"><img src="./images/buy.png" alt="logo buy"></a>
-               </div>
+               <a href="#" class="new-item">Новинка</a>
             </div>
             <div class="card">
                <img src="./images/mainProduct.png" alt="logo padovan" class="card__image">
@@ -116,23 +126,29 @@
                <span class="card__category">Корм для птиц</span>
                <span class="card__price">1000 руб.</span>
                <form action="#" class="card__form">
-                  <button class="card__form-item">
-                     <input type="radio">200 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">400 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">800 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">1 кг
-                  </button>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="200" checked>
+                     <label for="gramms"><span>200 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="400">
+                     <label for="gramms"><span>400 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="800">
+                     <label for="gramms"><span>800 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="1">
+                     <label for="gramms"><span>1 кг</span></label>
+                  </div>
+                  <div class="form-buttons">
+                     <a href="#" class="form-buttons__more-info">Подробнее</a>
+                     <button class="form-buttons__basket" type="button"><img src="./images/buy.png"
+                           alt="logo buy"></button>
+                  </div>
                </form>
-               <div class="card-buy">
-                  <a href="#">Подробнее</a>
-                  <a href="#"><img src="./images/buy.png" alt="logo buy"></a>
-               </div>
+               <a href="#" class="new-item">Новинка</a>
             </div>
             <div class="card">
                <img src="./images/mainProduct.png" alt="logo padovan" class="card__image">
@@ -140,23 +156,28 @@
                <span class="card__category">Корм для птиц</span>
                <span class="card__price">1000 руб.</span>
                <form action="#" class="card__form">
-                  <button class="card__form-item">
-                     <input type="radio">200 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">400 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">800 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">1 кг
-                  </button>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="200" checked>
+                     <label for="gramms"><span>200 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="400">
+                     <label for="gramms"><span>400 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="800">
+                     <label for="gramms"><span>800 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="1">
+                     <label for="gramms"><span>1 кг</span></label>
+                  </div>
+                  <div class="form-buttons">
+                     <a href="#" class="form-buttons__more-info">Подробнее</a>
+                     <button class="form-buttons__basket" type="button"><img src="./images/buy.png"
+                           alt="logo buy"></button>
+                  </div>
                </form>
-               <div class="card-buy">
-                  <a href="#">Подробнее</a>
-                  <a href="#"><img src="./images/buy.png" alt="logo buy"></a>
-               </div>
             </div>
             <div class="card">
                <img src="./images/mainProduct.png" alt="logo padovan" class="card__image">
@@ -164,23 +185,28 @@
                <span class="card__category">Корм для птиц</span>
                <span class="card__price">1000 руб.</span>
                <form action="#" class="card__form">
-                  <button class="card__form-item">
-                     <input type="radio">200 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">400 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">800 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">1 кг
-                  </button>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="200" checked>
+                     <label for="gramms"><span>200 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="400">
+                     <label for="gramms"><span>400 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="800">
+                     <label for="gramms"><span>800 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="1">
+                     <label for="gramms"><span>1 кг</span></label>
+                  </div>
+                  <div class="form-buttons">
+                     <a href="#" class="form-buttons__more-info">Подробнее</a>
+                     <button class="form-buttons__basket" type="button"><img src="./images/buy.png"
+                           alt="logo buy"></button>
+                  </div>
                </form>
-               <div class="card-buy">
-                  <a href="#">Подробнее</a>
-                  <a href="#"><img src="./images/buy.png" alt="logo buy"></a>
-               </div>
             </div>
             <div class="card">
                <img src="./images/mainProduct.png" alt="logo padovan" class="card__image">
@@ -188,23 +214,28 @@
                <span class="card__category">Корм для птиц</span>
                <span class="card__price">1000 руб.</span>
                <form action="#" class="card__form">
-                  <button class="card__form-item">
-                     <input type="radio">200 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">400 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">800 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">1 кг
-                  </button>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="200" checked>
+                     <label for="gramms"><span>200 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="400">
+                     <label for="gramms"><span>400 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="800">
+                     <label for="gramms"><span>800 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="1">
+                     <label for="gramms"><span>1 кг</span></label>
+                  </div>
+                  <div class="form-buttons">
+                     <a href="#" class="form-buttons__more-info">Подробнее</a>
+                     <button class="form-buttons__basket" type="button"><img src="./images/buy.png"
+                           alt="logo buy"></button>
+                  </div>
                </form>
-               <div class="card-buy">
-                  <a href="#">Подробнее</a>
-                  <a href="#"><img src="./images/buy.png" alt="logo buy"></a>
-               </div>
             </div>
             <div class="card">
                <img src="./images/mainProduct.png" alt="logo padovan" class="card__image">
@@ -212,23 +243,28 @@
                <span class="card__category">Корм для птиц</span>
                <span class="card__price">1000 руб.</span>
                <form action="#" class="card__form">
-                  <button class="card__form-item">
-                     <input type="radio">200 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">400 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">800 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">1 кг
-                  </button>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="200" checked>
+                     <label for="gramms"><span>200 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="400">
+                     <label for="gramms"><span>400 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="800">
+                     <label for="gramms"><span>800 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="1">
+                     <label for="gramms"><span>1 кг</span></label>
+                  </div>
+                  <div class="form-buttons">
+                     <a href="#" class="form-buttons__more-info">Подробнее</a>
+                     <button class="form-buttons__basket" type="button"><img src="./images/buy.png"
+                           alt="logo buy"></button>
+                  </div>
                </form>
-               <div class="card-buy">
-                  <a href="#">Подробнее</a>
-                  <a href="#"><img src="./images/buy.png" alt="logo buy"></a>
-               </div>
             </div>
             <div class="card">
                <img src="./images/mainProduct.png" alt="logo padovan" class="card__image">
@@ -236,23 +272,28 @@
                <span class="card__category">Корм для птиц</span>
                <span class="card__price">1000 руб.</span>
                <form action="#" class="card__form">
-                  <button class="card__form-item">
-                     <input type="radio">200 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">400 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">800 г
-                  </button>
-                  <button class="card__form-item">
-                     <input type="radio">1 кг
-                  </button>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="200" checked>
+                     <label for="gramms"><span>200 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="400">
+                     <label for="gramms"><span>400 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="800">
+                     <label for="gramms"><span>800 г</span></label>
+                  </div>
+                  <div class="radio">
+                     <input id="gramms" type="radio" name="gramms" value="1">
+                     <label for="gramms"><span>1 кг</span></label>
+                  </div>
+                  <div class="form-buttons">
+                     <a href="#" class="form-buttons__more-info">Подробнее</a>
+                     <button class="form-buttons__basket" type="button"><img src="./images/buy.png"
+                           alt="logo buy"></button>
+                  </div>
                </form>
-               <div class="card-buy">
-                  <a href="#">Подробнее</a>
-                  <a href="#"><img src="./images/buy.png" alt="logo buy"></a>
-               </div>
             </div>
 
          </div>
@@ -280,6 +321,7 @@
                      class="footer-icons__img"></a>
             </div>
             <div class="footer-contacts">
+               <img class="footer-contacts__logo" src="./images/tel2.png" alt="phone icon">
                <a class="footer-contacts__tel" href="tel:89209994350">8 920 999 43 50</a>
             </div>
          </div>

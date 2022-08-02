@@ -1,8 +1,8 @@
 @use "./blocks/mixins" as *;
 @use "./blocks/variables" as *;
 
-@import "./fonts/fonts";
-@import "./scafolding.scss";
+@import "./sections/fonts";
+@import "./scafolding";
 @import "./sections/header";
 @import "./sections/main";
 @import "./sections/footer";

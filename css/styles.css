@@ -1,49 +1,49 @@
 @font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-SemiBold.woff2") format("woff2"), url("Gilroy-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-Bold.woff2") format("woff2"), url("Gilroy-Bold.woff") format("woff");
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("Gilroy-Medium.woff2") format("woff2"), url("Gilroy-Medium.woff") format("woff");
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("Gilroy-Regular.woff2") format("woff2"), url("Gilroy-Regular.woff") format("woff");
-  font-weight: normal;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("Montserrat-SemiBold.woff2") format("woff2"), url("Montserrat-SemiBold.woff") format("woff");
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("Roboto-Medium.woff2") format("woff2"), url("Roboto-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("Roboto-Bold.woff2") format("woff2"), url("Roboto-Bold.woff") format("woff");
-  font-weight: bold;
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -144,11 +144,12 @@ input[type=radio] {
   content: url(../images/arrow.png);
 }
 
-.nav-search__form {
+.nav-search {
   position: relative;
 }
 
 .nav-search__input {
+  max-width: 345px;
   background: #F2F2F2;
   border: 1px solid #BDBDBD;
   border-radius: 10px;
@@ -170,22 +171,16 @@ input[type=radio] {
 .submenu {
   display: flex;
   justify-content: flex-start;
-  gap: 30px;
+  align-items: center;
+  gap: 15px;
   position: relative;
   margin-bottom: 30px;
 }
 
-.submenu img {
-  position: absolute;
-  top: 5px;
-  left: 72px;
-  width: 6px;
-  height: 6px;
-}
-
 .back {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 4px;
   margin-bottom: 44px;
 }
 
@@ -196,8 +191,7 @@ input[type=radio] {
   gap: 20px;
   margin-bottom: 50px;
 }
-
-.card {
+.cards .card {
   max-width: 315px;
   display: flex;
   flex-direction: column;
@@ -209,8 +203,8 @@ input[type=radio] {
   border-radius: 20px;
 }
 
-.card a {
-  display: block;
+.card {
+  position: relative;
 }
 
 .card__image {
@@ -244,8 +238,25 @@ input[type=radio] {
   color: #333333;
 }
 
-.card__form-item {
-  padding: 4px 12px;
+.card__form .radio:nth-child(1) {
+  margin-right: 12px;
+}
+.card__form .radio:nth-child(2) {
+  margin-right: 23px;
+}
+.card__form .radio:nth-child(3) {
+  margin-right: 31px;
+}
+
+.radio {
+  display: inline-block;
+}
+
+.form-buttons {
+  margin-top: 25px;
+}
+
+.radio label {
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -255,18 +266,24 @@ input[type=radio] {
   background: #F9F9F9;
 }
 
-.card__form-item:hover {
+.radio input[type=radio]:checked + label {
+  padding: 4px 12px;
   background: #FFFFFF;
   border: 1px solid #3ECF5E;
   border-radius: 5px;
 }
 
-.card-buy {
+.form-buttons {
   display: flex;
-  gap: 68px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card-buy a {
+.form-buttons__more-info {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
   color: #FFFFFF;
   padding: 12px 32px;
   background: #3FCF5E;
@@ -274,10 +291,54 @@ input[type=radio] {
   border-radius: 10px;
 }
 
+.form-buttons__basket {
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+}
+.form-buttons__basket img {
+  padding: 9px;
+}
+
+.new-item {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  background: #333333;
+  border-radius: 10px;
+  padding: 9px 16px;
+  max-width: 89px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
 .page-numbers {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+.page-numbers span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #828282;
+}
+.page-numbers span:nth-child(1) {
+  font-weight: 700;
+  color: #219653;
+}
+
+.page-numbers::before {
+  content: url(../images/arrowDown1.png);
+}
+
+.page-numbers::after {
+  content: url(../images/arrowDown2.png);
 }
 
 .footer {
@@ -311,6 +372,13 @@ input[type=radio] {
   margin-right: 466px;
 }
 
+.footer-contacts {
+  display: flex;
+  align-items: center;
+}
+.footer-contacts__logo {
+  margin-right: 9px;
+}
 .footer-contacts__tel {
   font-family: "Gilroy", sans-serif;
   font-style: normal;
