@@ -99,9 +99,8 @@ input[type=radio] {
   margin-right: 9px;
 }
 .contacts__tel {
-  font-family: "Gilroy", sans-serif;
-  font-style: normal;
   font-weight: 400;
+  font-family: "Gilroy", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -140,28 +139,39 @@ input[type=radio] {
   color: #4F4F4F;
 }
 
-.menu__item span::after {
-  content: url(../images/arrow.png);
+.menu__item:first-child:after {
+  content: url(../images/down.png);
+  margin-left: 4px;
 }
 
 .nav-search {
   position: relative;
 }
-
-.nav-search__input {
-  max-width: 345px;
+.nav-search__form .nav-search__input {
   background: #F2F2F2;
   border: 1px solid #BDBDBD;
   border-radius: 10px;
-  padding: 16px 273px 16px 20px;
+  padding: 16px 20px;
+  flex-basis: 100%;
+}
+.nav-search__form .nav-search__input::placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #828282;
 }
 
-.nav-search__icon {
+.search {
+  display: flex;
+  width: 345px;
+}
+
+.nav-search__btn {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  margin-right: 20px;
-  margin-top: 15px;
+  top: 15px;
+  right: 20px;
+  border: none;
 }
 
 .main {
@@ -176,6 +186,13 @@ input[type=radio] {
   position: relative;
   margin-bottom: 30px;
 }
+.submenu__item {
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #BDBDBD;
+}
 
 .back {
   display: flex;
@@ -183,24 +200,34 @@ input[type=radio] {
   gap: 4px;
   margin-bottom: 44px;
 }
+.back__item {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}
 
 .cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 46px;
   margin-bottom: 50px;
 }
 .cards .card {
-  max-width: 315px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 20px 30px;
   gap: 25px;
-  padding: 20px 20px 30px 20px;
   background: #F9F9F9;
   border: 1px solid #F2F2F2;
   box-shadow: -8px -8px 15px #FFFFFF, 8px 8px 15px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
+  width: 315px;
 }
 
 .card {
@@ -221,6 +248,7 @@ input[type=radio] {
 }
 
 .card__category {
+  display: block;
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -238,16 +266,6 @@ input[type=radio] {
   color: #333333;
 }
 
-.card__form .radio:nth-child(1) {
-  margin-right: 12px;
-}
-.card__form .radio:nth-child(2) {
-  margin-right: 23px;
-}
-.card__form .radio:nth-child(3) {
-  margin-right: 31px;
-}
-
 .radio {
   display: inline-block;
 }
@@ -257,17 +275,19 @@ input[type=radio] {
 }
 
 .radio label {
-  font-family: "Gilroy", sans-serif;
-  font-style: normal;
   font-weight: 500;
+  font-family: "Gilroy", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #4F4F4F;
   background: #F9F9F9;
 }
-
+.radio input[type=radio] + label {
+  border: 1px solid transparent;
+  padding: 4px 11px;
+  border-radius: 5px;
+}
 .radio input[type=radio]:checked + label {
-  padding: 4px 12px;
   background: #FFFFFF;
   border: 1px solid #3ECF5E;
   border-radius: 5px;
@@ -280,8 +300,8 @@ input[type=radio] {
 }
 
 .form-buttons__more-info {
-  font-family: "Gilroy", sans-serif;
   font-weight: 600;
+  font-family: "Gilroy", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
@@ -320,25 +340,19 @@ input[type=radio] {
   justify-content: center;
   gap: 20px;
 }
-.page-numbers span {
+.page-numbers__link {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 18px;
   line-height: 21px;
   color: #828282;
 }
-.page-numbers span:nth-child(1) {
+.page-numbers__link:nth-child(2) {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
   font-weight: 700;
   color: #219653;
-}
-
-.page-numbers::before {
-  content: url(../images/arrowDown1.png);
-}
-
-.page-numbers::after {
-  content: url(../images/arrowDown2.png);
 }
 
 .footer {
@@ -358,9 +372,8 @@ input[type=radio] {
 }
 
 .footer-menu__link {
-  font-family: "Gilroy", sans-serif;
-  font-style: normal;
   font-weight: 500;
+  font-family: "Gilroy", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
@@ -381,8 +394,6 @@ input[type=radio] {
 }
 .footer-contacts__tel {
   font-family: "Gilroy", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;

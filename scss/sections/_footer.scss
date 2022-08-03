@@ -4,8 +4,7 @@
 }
 
 .container {
-   display: flex;
-   align-items: center;
+   @include flexCenter();
 }
 
 .footer-menu {
@@ -15,11 +14,8 @@
 }
 
 .footer-menu__link {
-   font-family: 'Gilroy', sans-serif;
-   font-style: normal;
    font-weight: 500;
-   font-size: 18px;
-   line-height: 21px;
+   @include font();
    color: #FFFFFF;
 }
 
@@ -38,11 +34,7 @@
    }
 
    &__tel {
-      font-family: 'Gilroy', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 21px;
+      @include font();
       color: #FFFFFF;
    }
 }
