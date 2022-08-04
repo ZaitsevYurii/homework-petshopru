@@ -31,6 +31,11 @@
       line-height: 24px;
       color: #333333;
    }
+
+   &__item::before {
+      content: url("../images/back.png");
+      margin-right: 11px;
+   }
 }
 
 .cards {
@@ -164,12 +169,22 @@
       color: #828282;
    }
 
-   &__link:nth-child(2) {
+   &__link:nth-child(1) {
       font-family: 'Roboto', sans-serif;
       font-style: normal;
       font-size: 18px;
       line-height: 21px;
       font-weight: 700;
       color: #219653;
+   }
+
+   &__link:nth-child(1):before{
+      content: url("../images/leftarrow.png");
+      margin-right: 25px;
+   }
+
+   &__link:nth-child(3)::after{
+      content: url("../images/rightarrow.png");
+      margin-left: 25px;
    }
 }

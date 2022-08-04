@@ -81,6 +81,7 @@ input[type=radio] {
 .header {
   background-color: #FFFFFF;
   padding: 33px 0 30px 0;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05), inset 0px -5px 15px rgba(255, 255, 255, 0.44);
 }
 
 .logo {
@@ -207,6 +208,10 @@ input[type=radio] {
   font-size: 20px;
   line-height: 24px;
   color: #333333;
+}
+.back__item::before {
+  content: url("../images/back.png");
+  margin-right: 11px;
 }
 
 .cards {
@@ -346,13 +351,21 @@ input[type=radio] {
   line-height: 21px;
   color: #828282;
 }
-.page-numbers__link:nth-child(2) {
+.page-numbers__link:nth-child(1) {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
   font-weight: 700;
   color: #219653;
+}
+.page-numbers__link:nth-child(1):before {
+  content: url("../images/leftarrow.png");
+  margin-right: 25px;
+}
+.page-numbers__link:nth-child(3)::after {
+  content: url("../images/rightarrow.png");
+  margin-left: 25px;
 }
 
 .footer {
